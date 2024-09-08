@@ -10,7 +10,7 @@
 
 .wrapper {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     height: 48px;
 }
 
