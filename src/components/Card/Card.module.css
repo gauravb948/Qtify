@@ -1,0 +1,29 @@
+.mainCard {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.cardContent {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.chip {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 16px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+}
+
+p {
+    color: var(--color-white);
+}
