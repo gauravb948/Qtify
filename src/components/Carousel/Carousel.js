@@ -10,7 +10,7 @@ import RightNavigation from "../RightNavigation/RightNavigation";
 
 // Import SVGs as React components
 
-export default function Carousel({ data }) {
+export default function Carousel({ data, isSongs }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
@@ -57,7 +57,8 @@ export default function Carousel({ data }) {
                 key={item.id}
                 img={item.image}
                 heading={item.title}
-                chipLabel={item.follows}
+                chipLabel={isSongs ? item.likes : item.follows}
+                isSongs={isSongs}
               />
             </SwiperSlide>
           ))}
