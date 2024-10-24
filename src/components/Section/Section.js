@@ -17,7 +17,7 @@ function Section({ heading, data }) {
         <Button onClick={handleClick}>{buttonText}</Button>
       </div>
       <div className={styles.sectionContainer}>
-        {buttonText === "Show All" ? (
+        {buttonText === "Collapse" ? (
           data.map((item) => (
             <Card
               key={item.id}
