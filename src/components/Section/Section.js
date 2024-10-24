@@ -33,7 +33,7 @@ CustomTabPanel.propTypes = {
 
 function Section({ heading, data, isSongs, genre }) {
   const [buttonText, setButtonText] = useState("Show All");
-  const [value, setValue] = useState('jazz');
+  const [value, setValue] = useState('');
   const [shownSongs, setShownSongs] = useState([]);
 
 
@@ -48,9 +48,7 @@ function Section({ heading, data, isSongs, genre }) {
 
   useEffect(()=>{
     if(isSongs){
-      setShownSongs(data.filter(song=>
-        song?.genre?.key === 'jazz'
-      ))
+      setShownSongs(data)
     }
   },[data, isSongs])
 
