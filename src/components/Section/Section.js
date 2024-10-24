@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import Carousel from "../Carousel/Carousel";
 
 function Section({ heading, data }) {
-  const [buttonText, setButtonText] = useState("Collapse");
+  const [buttonText, setButtonText] = useState("Show All");
 
   const handleClick = () => {
     setButtonText(buttonText === "Collapse" ? "Show All" : "Collapse");
