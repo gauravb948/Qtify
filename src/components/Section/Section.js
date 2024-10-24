@@ -8,7 +8,7 @@ function Section({ heading, data }) {
   const [buttonText, setButtonText] = useState("Collapse");
 
   const handleClick = () => {
-    setButtonText(buttonText === "Collapse" ? "Show All" : "Collapse");
+    setButtonText(buttonText === "Collapse" ? "Collapse" : "Show All");
   };
   return (
     <div className={styles.headingWrapper}>
