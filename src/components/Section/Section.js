@@ -8,7 +8,7 @@ function Section({ heading, data }) {
   const [buttonText, setButtonText] = useState("Collapse");
 
   const handleClick = () => {
-    setButtonText(buttonText === "Collapse" ? "Collapse" : "Show All");
+    setButtonText(buttonText === "Collapse" ? "Show All" : "Collapse");
   };
   return (
     <div className={styles.headingWrapper}>
@@ -17,7 +17,7 @@ function Section({ heading, data }) {
         <Button onClick={handleClick}>{buttonText}</Button>
       </div>
       <div className={styles.sectionContainer}>
-        {buttonText === "Collapse" ? (
+        {buttonText === "Show All" ? (
           data.map((item) => (
             <Card
               key={item.id}
